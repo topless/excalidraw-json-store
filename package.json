@@ -1,0 +1,27 @@
+{
+  "name": "excalidraw-json-store",
+  "description": "Simple Node.js app to use Google Storage.",
+  "version": "0.0.2",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "topless",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/topless/excalidraw-json-store.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "mocha --exit test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.1.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.0.0"
+  }
+}
