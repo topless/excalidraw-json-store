@@ -17,7 +17,9 @@
     "test": "mocha --exit test/*.test.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "@google-cloud/storage": "^5.7.4",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "mocha": "^8.1.3",
