@@ -1,5 +1,3 @@
-'use strict';
-
 const DEFAULT_BUCKET = 'excalidraw-bucket';
 
 const { v4: uuidv4 } = require('uuid');
@@ -24,7 +22,13 @@ function createFile(data) {
   return uuid;
 }
 
+async function downloadFile(uuid) {
+  const file = bucket.file(uuid);
+  return file.download();
+}
+
 module.exports = {
-  createFile: createFile,
-  listFiles: listFiles,
+  createFile,
+  downloadFile,
+  listFiles,
 };
